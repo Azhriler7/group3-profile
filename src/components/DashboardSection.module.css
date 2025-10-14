@@ -1,0 +1,33 @@
+.dashboardContainer {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #0a0a0a;
+  scroll-snap-align: start;
+  overflow: hidden;
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.namesContainer {
+  display: flex;
+  gap: 50px;
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.name {
+  color: #b3b3b3;
+}

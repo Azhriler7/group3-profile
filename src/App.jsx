@@ -1,35 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import DashboardSection from './components/DashboardSection'; // 1. Impor komponen baru
+import HeroSection from './components/HeroSection';
+import LinktreeSection from './components/LinktreeSection';
+import './index.css';
+
+const hero1Data = {
+  title: "ELEMNTAL",
+  description: "In a city where fire, water, land, and air residents live together, a fiery young woman and a go-with-the-flow guy will discover something elemental: how much they have in common.",
+  imageUrl: "https://placehold.co/1920x1080/000000/FFFFFF?text=Hero+Image+1",
+  cardImageUrl: "https://placehold.co/400x250/E50914/FFFFFF?text=Elemental",
+  meta: {
+    year: "2023",
+    seasons: "Movie",
+    genre: "Animation, Comedy"
+  }
+};
+
+const hero2Data = {
+  title: "CYBERPUNK",
+  description: "A night city legend, a netrunner with a past, and a corporate enforcer collide in a tale of chrome, conspiracy, and consequence on the neon-drenched streets.",
+  imageUrl: "https://placehold.co/1920x1080/1a2a45/FFFFFF?text=Hero+Image+2",
+  cardImageUrl: "https://placehold.co/400x250/1a2a45/FFFFFF?text=Cyberpunk",
+  meta: {
+    year: "2077",
+    seasons: "1 Season",
+    genre: "Sci-Fi, Action"
+  }
+};
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="container">
+      <DashboardSection /> {/* 2. Tambahkan komponen di paling atas */}
+      <HeroSection data={hero1Data} layout="right" />
+      <HeroSection data={hero2Data} layout="left" />
+      <LinktreeSection hero1Data={hero1Data} hero2Data={hero2Data} />
+    </div>
+  );
 }
 
-export default App
+export default App;
