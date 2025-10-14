@@ -14,6 +14,12 @@ React + Vite single-page profile site for Group 3.
 - Tooling: Node.js 20 with `npm ci`, followed by `npm run build`, then `actions/deploy-pages@v4` publishes the site.
 - First-time setup: in GitHub → Settings → Pages, ensure the source is set to **GitHub Actions** and grant the workflow read/write permission to Pages if prompted.
 
+## Redirect root domain
+- File `root-redirect/index.html` performs a meta-refresh + script redirect to `https://azhriler7.github.io/group3-profile/`.
+- Create a repository named `azhriler7/azhriler7.github.io` (this hosts `https://azhriler7.github.io/`).
+- Copy `root-redirect/index.html` into that repo as its `index.html`, commit, and enable GitHub Pages (from `main`, root).
+- Visiting `https://azhriler7.github.io/` will then jump to the profile app while keeping the existing project Pages workflow untouched.
+
 ## Project Notes
 - The Vite base path is set to `/group3-profile/` so assets load correctly from GitHub Pages.
 - Update the base path if the repository name changes or if you host under a custom domain.
