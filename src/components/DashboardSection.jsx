@@ -31,11 +31,14 @@ function DashboardSection() {
       animate="visible"
     >
       <Motion.h1 className={styles.title} variants={itemVariants}>
+        Cloud Computing
+      </Motion.h1>
+      <Motion.h1 className={styles.title} variants={itemVariants}>
         Kelompok 3
       </Motion.h1>
       <Motion.div className={styles.namesContainer} variants={itemVariants}>
-        <span className={styles.name}>Azhril</span>
-        <span className={styles.name}>Akbar</span>
+        <span className={styles.name}>Azhriler Lintang - 3337230087</span>
+        <span className={styles.name}>Mujadid Akbar Paryono - 3337230089</span>
       </Motion.div>
     </Motion.section>
   );

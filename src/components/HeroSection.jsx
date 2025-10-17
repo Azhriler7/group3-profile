@@ -14,6 +14,11 @@ function HeroSection({ data, layout = 'right' }) {
 
   const containerClasses = `${styles.heroContainer} ${layout === 'left' ? styles.layoutLeft : ''}`;
 
+  const handleCtaClick = () => {
+    const el = document.getElementById('linktree');
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
   return (
     <section ref={ref} className={containerClasses}>
       <div className={styles.background}>
@@ -33,9 +38,9 @@ function HeroSection({ data, layout = 'right' }) {
           <span>{data.meta.seasons}</span>
           <span>{data.meta.genre}</span>
         </div>
-        <button className={styles.ctaButton}>
+        <button className={styles.ctaButton} type="button" onClick={handleCtaClick}>
           <FaPlay />
-          <span>Watch Now</span>
+          <span>See our Github</span>
         </button>
       </Motion.div>
     </section>

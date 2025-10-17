@@ -12,6 +12,9 @@ function LinktreeCard({ data, delay }) {
     }
   };
 
+  const baseWord = (data?.shortLabel || data?.title || '').split(' ')[0] || 'Open';
+  const hoverWord = data?.hoverLabel || 'GitHub';
+
   return (
     <Motion.a
       href="#"
@@ -20,14 +23,18 @@ function LinktreeCard({ data, delay }) {
     >
       <img src={data.cardImageUrl} alt={data.title} className={styles.cardImage} />
       <div className={styles.cardOverlay}></div>
-      <h3 className={styles.cardTitle}>{data.title}</h3>
+
+      <h3 className={styles.cardTitle}>
+        <span className={styles.baseLabel}>{baseWord}</span>
+        <span className={styles.hoverLabel}>{hoverWord}</span>
+      </h3>
     </Motion.a>
   );
 }
 
 function LinktreeSection({ hero1Data, hero2Data }) {
   return (
-    <section className={styles.linktreeContainer}>
+    <section id="linktree" className={styles.linktreeContainer}>
       <Motion.h2
         className={styles.sectionTitle}
         initial={{ opacity: 0, y: 20 }}
@@ -35,7 +42,7 @@ function LinktreeSection({ hero1Data, hero2Data }) {
         viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 0.5 }}
       >
-        Jelajahi Lebih Lanjut
+        GitHub Link
       </Motion.h2>
       <Motion.div
         className={styles.cardGrid}

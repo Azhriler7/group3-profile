@@ -1,30 +1,30 @@
 import React from 'react';
-import DashboardSection from './components/DashboardSection'; // 1. Impor komponen baru
+import DashboardSection from './components/DashboardSection';
 import HeroSection from './components/HeroSection';
 import LinktreeSection from './components/LinktreeSection';
 import './index.css';
 
 const hero1Data = {
-  title: "ELEMNTAL",
-  description: "In a city where fire, water, land, and air residents live together, a fiery young woman and a go-with-the-flow guy will discover something elemental: how much they have in common.",
-  imageUrl: "https://placehold.co/1920x1080/000000/FFFFFF?text=Hero+Image+1",
-  cardImageUrl: "https://placehold.co/400x250/E50914/FFFFFF?text=Elemental",
+  title: "Azhrier Lintang - 3337230087",
+  description: "Saya adalah mahasiswa yang tertarik pada pengembangan mobile, terutama Flutter, Kotlin, dan React Native.",
+  imageUrl: "https://cataas.com/cat/says/MEOW%20FLUTTER?width=1920&height=1080&size=72&color=white",
+  cardImageUrl: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
   meta: {
-    year: "2023",
-    seasons: "Movie",
-    genre: "Animation, Comedy"
+    year: "HTML",
+    seasons: "CSS",
+    genre: "JavaScript"
   }
 };
 
 const hero2Data = {
-  title: "CYBERPUNK",
-  description: "A night city legend, a netrunner with a past, and a corporate enforcer collide in a tale of chrome, conspiracy, and consequence on the neon-drenched streets.",
-  imageUrl: "https://placehold.co/1920x1080/1a2a45/FFFFFF?text=Hero+Image+2",
-  cardImageUrl: "https://placehold.co/400x250/1a2a45/FFFFFF?text=Cyberpunk",
+  title: "Mujadid Akbar Paryono - 3337230089",
+  description: "Saya adalah mahasiswa yang tertarik pada pengembangan web, terutama React, Node.js, dan Express.",
+  imageUrl: "https://cataas.com/cat/says/MEOW%20REACT?width=1920&height=1080&size=72&color=white",
+  cardImageUrl: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
   meta: {
-    year: "2077",
-    seasons: "1 Season",
-    genre: "Sci-Fi, Action"
+    year: "HTML",
+    seasons: "CSS",
+    genre: "JavaScript"
   }
 };
 

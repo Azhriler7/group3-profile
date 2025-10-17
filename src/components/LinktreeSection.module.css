@@ -60,11 +60,45 @@
 }
 
 .card:hover .cardOverlay {
-    background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .cardTitle {
   font-size: 2rem;
   z-index: 3;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.cardTitle {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  margin: 0;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1;
+  z-index: 2;
+  pointer-events: none; 
+}
+
+.baseLabel,
+.hoverLabel {
+  display: block;
+  transform: translateY(0);
+  transition: transform 300ms ease, opacity 300ms ease;
+  will-change: transform;
+}
+
+.hoverLabel {
+  transform: translateY(110%);
+}
+
+.card:hover .hoverLabel {
+  transform: translateY(0%);
+}
+
+.card:hover .baseLabel {
+  transform: translateY(-110%);
 }
