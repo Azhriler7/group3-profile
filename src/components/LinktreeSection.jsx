@@ -17,7 +17,10 @@ function LinktreeCard({ data, delay }) {
 
   return (
     <Motion.a
-      href="#"
+      href={data?.githubUrl || '#'}
+      target="_blank"
+      rel="noopener noreferrer"
+      title={data?.title ? `Buka GitHub ${data.title}` : 'Buka GitHub'}
       className={styles.card}
       variants={cardVariants}
     >

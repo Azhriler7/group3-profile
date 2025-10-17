@@ -9,6 +9,7 @@ const hero1Data = {
   description: "Saya adalah mahasiswa yang tertarik pada pengembangan mobile, terutama Flutter, Kotlin, dan React Native.",
   imageUrl: "https://cataas.com/cat/says/MEOW%20FLUTTER?width=1920&height=1080&size=72&color=white",
   cardImageUrl: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+  githubUrl: "https://github.com/Azhriler7",
   meta: {
     year: "HTML",
     seasons: "CSS",
@@ -21,6 +22,7 @@ const hero2Data = {
   description: "Saya adalah mahasiswa yang tertarik pada pengembangan web, terutama React, Node.js, dan Express.",
   imageUrl: "https://cataas.com/cat/says/MEOW%20REACT?width=1920&height=1080&size=72&color=white",
   cardImageUrl: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+  githubUrl: "https://github.com/Bar-innutshell",
   meta: {
     year: "HTML",
     seasons: "CSS",
